@@ -18,6 +18,7 @@ let links = [
 ];
 
 // -- add attributes
+// -- -- for link attributes
 let linkText = ["About", "Previous Work", "Projects", "Contact"];
 let pageLinks = [
   "./index.html",
@@ -42,3 +43,12 @@ for (let i = 0; i < 4; i++) {
 }
 nav.append(list);
 head.append(nav);
+
+// set up page footer
+let foot = document.querySelector("#foot");
+
+// -- create elements
+// todo
+
+// -- append elements
+// todo

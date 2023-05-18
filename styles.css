@@ -8,7 +8,7 @@
   --black: #080808;
   --white: #fefefe;
   --gray: #565656;
-  --light-light-gray: rgba(120, 118, 118, 0.1);
+  --light-light-gray: rgba(120, 118, 118, 0.2);
   --light-gray: rgba(120, 118, 118, 0.5);
 
   --teal: #006060;
@@ -20,6 +20,10 @@
 
 html {
   background-color: var(--white);
+}
+
+header {
+  /* should stick to top */
 }
 
 body {
@@ -36,6 +40,12 @@ h1 {
 
 form {
   width: 400px;
+}
+
+footer {
+  /* should stick to bottom */
+  border-top: solid 1px var(--light-light-gray);
+  margin: 0 10px;
 }
 
 /* for nav bar */
@@ -93,7 +103,7 @@ form {
   }
 }
 
-/* for about page */
+/* for about (index) page */
 .abt-photo {
   display: block;
   margin: 0 auto;
