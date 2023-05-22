@@ -15,7 +15,10 @@
   --violetred: #a2106d;
   --orange: #ffa500;
 
-  --red: #d0342c;
+  --vermillion: #f24236;
+  --sunglow: #ffc857;
+  --bluegrey: #496a81;
+  --moonstone: #66999b;
 }
 
 html {
@@ -48,8 +51,13 @@ form {
 
 footer {
   /* should stick to bottom */
+  /* should match height of header? */
+  padding: 25px 0;
   border-top: solid 1px var(--light-light-gray);
-  margin: 0 10px;
+}
+
+.primary {
+  background-color: var(--black);
 }
 
 /* for nav bar */
@@ -57,7 +65,7 @@ footer {
   margin: 0px;
   padding: 25px 0;
   width: 100%;
-  background-color: var(--black);
+  background-color: var(--bluegrey);
 }
 
 .menu-list {
@@ -81,7 +89,7 @@ footer {
 }
 
 .menu-tab:hover {
-  background-color: var(--violetred);
+  background-color: var(--sunglow);
 }
 
 @media (max-width: 450px) {

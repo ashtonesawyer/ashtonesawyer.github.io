@@ -17,7 +17,7 @@ let links = [
   document.createElement("a"),
 ];
 
-// -- add attributes
+// -- add attributes + text
 // -- -- for link attributes
 let linkText = ["About", "Previous Work", "Projects", "Contact"];
 let pageLinks = [
@@ -46,9 +46,27 @@ head.append(nav);
 
 // set up page footer
 let foot = document.querySelector("#foot");
+foot.setAttribute("class", "primary");
 
 // -- create elements
-// todo
+let ghost = document.createElement("img"); // logo
+let gitIcon = document.createElement("img");
+let gitLink = document.createElement("a");
+let cr = document.createElement("span"); // copyright
+
+// -- add attributes + text
+let imgAttr = ["src", "alt", "width", "height"];
+let ghostAttr = ["#", "A white ghost with a gold crown", "#", "#"];
+let gitIconAttr = ["./images/github-logo-black.jpg", "Github Logo", "35", "35"];
+for (let i = 0; i < 4; i++) {
+  ghost.setAttribute(imgAttr[i], ghostAttr[i]);
+  gitIcon.setAttribute(imgAttr[i], gitIconAttr[i]);
+}
+gitLink.setAttribute("href", "https://github.com/ashtonesawyer");
+cr.textContent = "Copyright 2023";
 
 // -- append elements
-// todo
+gitLink.append(gitIcon);
+foot.append(ghost);
+foot.append(gitLink);
+foot.append(cr);
