@@ -24,6 +24,7 @@ html {
 
 header {
   /* should stick to top */
+  /* or scrolling thing? */
 }
 
 body {
@@ -36,10 +37,13 @@ body {
 h1 {
   text-align: center;
   font-size: 2rem;
+  margin: 10px auto;
 }
 
 form {
-  width: 400px;
+  display: inline-block;
+  margin: 0 25%;
+  max-width: 100%;
 }
 
 footer {
@@ -117,4 +121,34 @@ footer {
 
 .bio::first-line {
   font-weight: bold;
+}
+
+/* for contact page */
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-half {
+  width: 49%;
+  padding: 10px;
+}
+
+.contact-section {
+  padding: 5px 0;
+}
+
+.contact-input {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+  justify-content: space-between;
+}
+
+@media (max-width: 775px) {
+  .contact-half {
+    width: 90%;
+  }
 }
