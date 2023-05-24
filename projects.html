@@ -12,11 +12,75 @@
       href="/images/favicon.ico"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <script defer src="script.js"></script>
+    <script src="carousel.js"></script>
   </head>
   <body>
     <header id="head"></header>
-    <main></main>
+    <main>
+      <h1>Projects</h1>
+      <section class="carousel">
+        <i class="fa-solid fa-arrow-left arrow" id="prev"></i>
+        <div class="cards">
+          <div class="showing">
+            <div class="card">
+              <img src="#" alt="#" />
+              <div class="text">
+                <h2>Project Scheduler</h2>
+                <a href="https://github.com/ashtonesawyer/Project-Scheduler">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <p>Automatically plan times to work on a project</p>
+                <a href="#project-scheduler">Learn More</a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/fitbot.png"
+                alt="FitBot logo"
+                width="133"
+                height="310"
+              />
+              <div class="text">
+                <h2>FitBot</h2>
+                <a href="https://github.com/ashtonesawyer/FitBot">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <p>Get fitness advice from a virtual personal trainer</p>
+                <a href="#fitbot">Learn More</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="#" alt="#" />
+              <div class="text">
+                <h2>#</h2>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <p>#</p>
+                <a href="">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <i class="fa-solid fa-arrow-right arrow" id="next"></i>
+        <div class="indicator"></div>
+      </section>
+      <section class="projects">
+        <div class="project-scheduler" id="project-scheduler"></div>
+        <div class="fitbot" id="fitbot">
+          <iframe
+            width="350"
+            height="430"
+            allow="microphone;"
+            src="https://console.dialogflow.com/api-client/demo/embedded/35696ed9-14b6-4ba0-ba62-f2c23334ac2c"
+          ></iframe>
+        </div>
+        <div class="project3" id="#"></div>
+      </section>
+    </main>
     <footer id="foot"></footer>
   </body>
 </html>
