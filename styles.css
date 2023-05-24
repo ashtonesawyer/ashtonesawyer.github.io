@@ -137,7 +137,7 @@ footer {
 }
 
 /* for projects page */
-.carousel {
+/* .carousel {
   display: flex;
   max-width: 650px;
   width: 100%;
@@ -181,14 +181,40 @@ footer {
   height: 100%;
   width: 100%;
   transition: all 0.4s ease;
-}
+} */
 
 .card {
-  height: 100%;
-  width: 100%;
-  border-radius: 18px;
-  border: 10px solid var(--black);
-  object-fit: cover;
+  display: flex;
+  width: 500px;
+  border: 1px solid var(--black);
+}
+
+.card-img {
+  width: 166px;
+  height: 300px;
+  padding: 10px;
+}
+
+.text {
+  padding: 10px;
+  display: flex column;
+  align-items: space-around;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.card-title {
+  font-size: 25px;
+}
+
+.git-logo {
+  font-size: 35px;
+  color: var(--steel-blue);
 }
 
 /* for contact page */
