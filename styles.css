@@ -63,6 +63,21 @@ footer {
 
 .primary {
   background-color: var(--yellow);
+  color: var(--black);
+}
+
+.primary:hover {
+  color: var(--white);
+  background-color: var(--steel-blue);
+}
+
+.secondary {
+  background-color: var(--steel-blue);
+  color: var(--white);
+}
+
+.secondary:hover {
+  color: var(--white);
 }
 
 /* for nav bar */
@@ -226,6 +241,22 @@ footer {
   color: var(--dark-blue);
 }
 
+.projects {
+  margin-top: 50px;
+}
+
+.project {
+  margin: 30px 0;
+}
+
+.fitbot {
+  display: flex;
+}
+
+.proj-info {
+  margin: 10px;
+}
+
 /* for contact page */
 .flex-box {
   display: flex;
@@ -251,17 +282,12 @@ footer {
 }
 
 .btn {
+  display: inline-block;
   border: 0;
   width: 100%;
   padding: 10px 0;
-  color: var(--black);
   text-decoration: 0;
   text-align: center;
-}
-
-.btn:hover {
-  background-color: var(--steel-blue);
-  color: var(--white);
 }
 
 @media (max-width: 775px) {
