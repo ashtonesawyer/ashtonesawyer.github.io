@@ -137,7 +137,7 @@ footer {
 }
 
 /* for projects page */
-/* .carousel {
+.carousel {
   display: flex;
   max-width: 650px;
   width: 100%;
@@ -147,6 +147,7 @@ footer {
   justify-content: center;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
 }
 
 .arrow {
@@ -171,8 +172,8 @@ footer {
 
 .cards {
   height: 320px;
-  max-width: 500px;
   width: 100%;
+  max-width: 500px;
   overflow: hidden;
 }
 
@@ -181,24 +182,28 @@ footer {
   height: 100%;
   width: 100%;
   transition: all 0.4s ease;
-} */
+}
 
 .card {
   display: flex;
-  width: 500px;
+  min-width: 500px;
+  max-width: 500px;
   border: 1px solid var(--black);
+  object-fit: cover;
 }
 
 .card-img {
-  width: 166px;
+  width: 33%;
   height: 300px;
   padding: 10px;
+  align-self: center;
 }
 
 .text {
-  padding: 10px;
-  display: flex column;
-  align-items: space-around;
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-top {
@@ -215,6 +220,10 @@ footer {
 .git-logo {
   font-size: 35px;
   color: var(--steel-blue);
+}
+
+.git-logo:hover {
+  color: var(--dark-blue);
 }
 
 /* for contact page */
@@ -246,6 +255,8 @@ footer {
   width: 100%;
   padding: 10px 0;
   color: var(--black);
+  text-decoration: 0;
+  text-align: center;
 }
 
 .btn:hover {
