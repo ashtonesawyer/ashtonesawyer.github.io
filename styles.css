@@ -15,10 +15,10 @@
   --violetred: #a2106d;
   --orange: #ffa500;
 
-  --vermillion: #f24236;
-  --sunglow: #ffc857;
-  --bluegrey: #496a81;
-  --moonstone: #66999b;
+  --black-blue: #00002a;
+  --dark-blue: #152238;
+  --steel-blue: #2d82b7;
+  --yellow: #eeeb2e;
 }
 
 html {
@@ -52,12 +52,17 @@ form {
 footer {
   /* should stick to bottom */
   /* should match height of header? */
+  background-color: var(--black-blue);
   padding: 25px 0;
   border-top: solid 1px var(--light-light-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
 }
 
 .primary {
-  background-color: var(--black);
+  background-color: var(--yellow);
 }
 
 /* for nav bar */
@@ -65,7 +70,7 @@ footer {
   margin: 0px;
   padding: 25px 0;
   width: 100%;
-  background-color: var(--bluegrey);
+  background-color: var(--dark-blue);
 }
 
 .menu-list {
@@ -89,7 +94,7 @@ footer {
 }
 
 .menu-tab:hover {
-  background-color: var(--sunglow);
+  background-color: var(--steel-blue);
 }
 
 @media (max-width: 450px) {
@@ -153,6 +158,18 @@ footer {
 .hidden {
   display: none;
   justify-content: space-between;
+}
+
+.btn {
+  border: 0;
+  width: 100%;
+  padding: 10px 0;
+  color: var(--black);
+}
+
+.btn:hover {
+  background-color: var(--steel-blue);
+  color: var(--white);
 }
 
 @media (max-width: 775px) {

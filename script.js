@@ -46,7 +46,6 @@ head.append(nav);
 
 // set up page footer
 let foot = document.querySelector("#foot");
-foot.setAttribute("class", "primary");
 
 // -- create elements
 let ghost = document.createElement("img"); // logo
@@ -56,8 +55,13 @@ let cr = document.createElement("span"); // copyright
 
 // -- add attributes + text
 let imgAttr = ["src", "alt", "width", "height"];
-let ghostAttr = ["#", "A white ghost with a gold crown", "#", "#"];
-let gitIconAttr = ["./images/github-logo-black.jpg", "Github Logo", "35", "35"];
+let ghostAttr = [
+  "./images/ghost-trans.svg",
+  "A ghost with a gold crown",
+  "42",
+  "70",
+];
+let gitIconAttr = ["./images/github-icon.png", "Github Logo", "35", "35"];
 for (let i = 0; i < 4; i++) {
   ghost.setAttribute(imgAttr[i], ghostAttr[i]);
   gitIcon.setAttribute(imgAttr[i], gitIconAttr[i]);
