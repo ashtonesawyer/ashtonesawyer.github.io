@@ -152,6 +152,23 @@ footer {
 }
 
 /* for projects page */
+.page-top {
+  background-color: var(--steel-blue);
+  height: 91vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel-out {
+  font-size: 50px;
+  color: var(--white);
+}
+
+.carousel-out:hover {
+  color: var(--gray);
+}
+
 .carousel {
   display: flex;
   max-width: 650px;
