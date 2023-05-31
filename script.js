@@ -51,7 +51,9 @@ let foot = document.querySelector("#foot");
 let ghost = document.createElement("img"); // logo
 let gitIcon = document.createElement("img");
 let gitLink = document.createElement("a");
+let crDiv = document.createElement("span");
 let cr = document.createElement("span"); // copyright
+let crIcon = document.createElement("i");
 
 // -- add attributes + text
 let imgAttr = ["src", "alt", "width", "height"];
@@ -68,9 +70,12 @@ for (let i = 0; i < 4; i++) {
 }
 gitLink.setAttribute("href", "https://github.com/ashtonesawyer");
 cr.textContent = "Copyright 2023";
+crIcon.setAttribute("class", "fa fa-copyright copyright");
 
 // -- append elements
+crDiv.append(crIcon);
+crDiv.append(cr);
 gitLink.append(gitIcon);
 foot.append(ghost);
 foot.append(gitLink);
-foot.append(cr);
+foot.append(crDiv);

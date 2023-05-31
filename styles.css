@@ -80,6 +80,14 @@ footer {
   color: var(--white);
 }
 
+.copyright {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  margin: 0 5px 0 0;
+}
+
 /* for nav bar */
 .menu {
   margin: 0px;
@@ -166,7 +174,7 @@ footer {
 }
 
 .carousel-out:hover {
-  color: var(--gray);
+  color: var(--black-blue);
 }
 
 .carousel {
