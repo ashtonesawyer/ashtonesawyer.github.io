@@ -88,6 +88,15 @@ footer {
   margin: 0 5px 0 0;
 }
 
+.footer-git {
+  font-size: 40px;
+  color: var(--white);
+}
+
+.footer-git:hover {
+  color: var(--gray);
+}
+
 /* for nav bar */
 .menu {
   margin: 0px;
