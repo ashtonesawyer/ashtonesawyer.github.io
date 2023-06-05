@@ -68,9 +68,6 @@
                 <div class="text">
                   <div class="card-top">
                     <h2 class="card-title">Chocoholics Anonymous</h2>
-                    <a href="#"
-                      ><i class="fa-brands fa-github git-logo chocan-git"></i
-                    ></a>
                   </div>
                   <p>
                     Manage care providers and auto-generate financial reports
@@ -92,23 +89,24 @@
         <div class="project project-scheduler" id="project-scheduler">
           <h2>Project Scheduler</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rerum
-            minima asperiores numquam quidem illum libero, odit voluptates id
-            exercitationem distinctio sit molestiae delectus, ipsa iure fugiat
-            totam officia soluta? Repellendus ipsam doloremque enim adipisci
-            sunt culpa, delectus, itaque provident minima praesentium
-            consequatur amet ipsa laboriosam numquam sapiente dignissimos illo
-            velit voluptatum aliquam labore ad accusantium dolores
-            exercitationem? Saepe, possimus! Illum at ullam, amet sint et
-            officiis, similique odio a adipisci error aperiam voluptate eaque
-            incidunt iusto debitis? Corporis illum nemo amet ab libero. Veniam
-            necessitatibus sit rem suscipit consequuntur! Amet quia sunt
-            similique? Distinctio at laboriosam architecto dolor magni facilis,
-            minus eaque delectus debitis, in harum id veritatis sunt enim,
-            quisquam sequi non mollitia est ducimus numquam minima velit? Neque
-            adipisci temporibus ea unde similique nihil hic blanditiis ex nam,
-            numquam aliquam ipsum non fugiat velit, quas amet recusandae a.
-            Deleniti hic esse architecto at harum aut ad corporis?
+            This project aims to take information about any project you might be
+            working on and auto-schedule times in Google Calendar to work on it.
+            It asks how long you expect the project to complete, what times/days
+            you want to work on it, how long you want to work on it in one
+            sitting, etc.
+          </p>
+          <p>
+            There is a simple GUI written with Tkinter in order to gather the
+            information needed. This part of the project is still in progress
+            but is currently functional. The main functionality that needs to be
+            added is connecting the underlying logic with the GUI so that errors
+            can be communicated with the user.
+          </p>
+          <p>
+            There is also one known error with the scheduler itself. Because of
+            the way that appointments are loaded into the program to calculate
+            chunks of free time, if there are overlapping appointments already
+            in the calendar, it can accidentally create a double booking.
           </p>
           <a
             href="https://github.com/ashtonesawyer/Project-Scheduler"
@@ -126,17 +124,36 @@
           <div class="proj-info">
             <h2>FitBot</h2>
             <p class="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates animi delectus natus vitae fugiat dolorum, quaerat
-              inventore. Voluptas accusamus est sit explicabo ea consequuntur,
-              quae minus dolorum corporis amet doloribus! Laborum expedita
-              blanditiis numquam cupiditate eveniet earum minima aspernatur
-              delectus optio reprehenderit nisi sed quibusdam, incidunt aliquid
-              animi eligendi quisquam mollitia libero! Sequi, facere! Nobis
-              deserunt dolorem nulla optio minus. Dicta perferendis commodi ut
-              voluptatem, fugit ex sapiente laborum quam expedita dolore
-              assumenda debitis illum nam deleniti natus tempora praesentium
-              tempore saepe neque voluptas iure qui at. Esse, quasi numquam.
+              This is a fitness-based chatbot that has 4 main intents. All of
+              the exercise information was retrieved from Exercise by
+              API-Ninjas. You can test the program in the widget to the left. To
+              get started, try typing in “help”
+            </p>
+            <h3>Intents</h3>
+            <p>
+              <span class="intent">Create a Workout</span> creates a 3-phase
+              workout (warmup, workout, cooldown) based on the muscles that the
+              user wants to target, or they could choose to do a stretching or
+              cardio-based workout. Because the exercises are chosen randomly
+              from a list, there can be repeated exercises listed. More
+              importantly, there is a bug where the bot has a problem with
+              outputting the workout. I know that the code itself works from
+              testing outside of the Dialogflow framework, and I’m not entirely
+              sure why it doesn’t work within the app.
+              <br />
+              <span class="intent">Workout Plan Advice</span> gives basic plan
+              advice depending on the user’s workout frequency, goals, and how
+              skilled they are.
+              <br />
+              <span class="intent">Muscle Targeting</span> takes the name of a
+              muscle and gives a list of 10 exercises that target that muscle
+              <br />
+              The <span class="intent">How to</span> intent takes the name of an
+              exercise and gives a description of how to do that exercise.
+              <br />
+              All of the intents could use more example phrases, and the how to
+              intent specifically needs more examples of exercise names to match
+              with
             </p>
             <a
               href="https://github.com/ashtonesawyer/FitBot"
@@ -148,24 +165,17 @@
         <div class="project choc-an" id="choc-an">
           <h2>Chocoholics Anonymous</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
-            quidem harum ab vitae ratione officia aut obcaecati minus qui
-            nesciunt nemo. Repellat, et eius consequatur necessitatibus quia
-            tempore asperiores quibusdam. Unde, consequuntur laudantium iure est
-            magni repellat nisi aliquam nihil molestiae voluptas nobis laborum
-            culpa atque quasi voluptatibus nesciunt reprehenderit eaque harum,
-            ipsam expedita doloribus ratione neque! Inventore, necessitatibus
-            tenetur! Quo, eum et adipisci aspernatur perspiciatis voluptas eos
-            explicabo aperiam impedit soluta distinctio, sunt veniam, aliquam
-            atque possimus ducimus voluptate. Nesciunt recusandae cupiditate
-            modi quibusdam saepe eligendi quia sit distinctio. Aspernatur
-            laudantium fuga ex vitae dolores quis id quo cupiditate deserunt
-            eius, autem, rem assumenda. Quam sunt odit perspiciatis deserunt
-            recusandae, esse ipsum repellendus ad vitae laboriosam dicta tempora
-            quidem! Facilis quis vel neque nostrum omnis minima iste culpa optio
-            ab doloribus reprehenderit mollitia quo eius pariatur unde, aliquid
-            quos. Atque ducimus vero iure necessitatibus doloremque fugit sint,
-            eos deleniti.
+            This was a group project. The goal was to create a piece of software
+            to manage the providers and members in a doctor-like organization
+            called Chocoholics Anonymous. The end goal was to auto-generate
+            financial reports for all of the people in the organization. My job
+            was to create the provider database. We didn’t have the resources to
+            create an actual database, so all of the providers were managed in a
+            JSON file that was saved upon closing and uploaded on opening the
+            program.
+            <br />
+            Unfortunately, this project is held in a private repository managed
+            by a different group member, so I cannot link to it here.
           </p>
         </div>
       </section>
