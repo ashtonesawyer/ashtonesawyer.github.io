@@ -49,6 +49,7 @@ let foot = document.querySelector("#foot");
 
 // -- create elements
 let ghost = document.createElement("img"); // logo
+let gitSR = document.createElement("span"); // for screen reader
 let gitIcon = document.createElement("i");
 let gitLink = document.createElement("a");
 let crDiv = document.createElement("span");
@@ -66,6 +67,8 @@ let ghostAttr = [
 for (let i = 0; i < 4; i++) {
   ghost.setAttribute(imgAttr[i], ghostAttr[i]);
 }
+gitSR.setAttribute("class", "sr-only");
+gitSR.textContent = "GitHub";
 gitIcon.setAttribute("class", "fa-brands fa-github footer-git");
 gitLink.setAttribute("href", "https://github.com/ashtonesawyer");
 cr.textContent = "Copyright 2023";
@@ -75,6 +78,7 @@ crIcon.setAttribute("class", "fa fa-copyright copyright");
 crDiv.append(crIcon);
 crDiv.append(cr);
 gitLink.append(gitIcon);
+gitLink.append(gitSR);
 foot.append(ghost);
 foot.append(gitLink);
 foot.append(crDiv);
