@@ -49,6 +49,10 @@ form {
   max-width: 100%;
 }
 
+table {
+  border: 2px solid var(--black);
+}
+
 footer {
   /* should stick to bottom */
   background-color: var(--black-blue);
@@ -97,13 +101,7 @@ footer {
 }
 
 .sr-only {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  color: var(--white);
+  display: hidden;
 }
 
 /* for nav bar */
@@ -304,6 +302,67 @@ footer {
   font-weight: bold;
 }
 
+.question {
+  font-weight: normal;
+}
+
+.questionnaire {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 0;
+}
+
+.neutral {
+  appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid var(--gray);
+  border-radius: 50%;
+}
+
+.neutral:checked {
+  background-color: var(--gray);
+}
+
+.dis {
+  appearance: none;
+  width: 2em;
+  height: 2em;
+  border: 2px solid var(--violetred);
+  border-radius: 50%;
+}
+
+.dis:checked {
+  background-color: var(--violetred);
+}
+
+.agree {
+  appearance: none;
+  width: 2em;
+  height: 2em;
+  border: 2px solid var(--steel-blue);
+  border-radius: 50%;
+}
+
+.agree:checked {
+  background-color: var(--steel-blue);
+}
+
+.str {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.elipses {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+label {
+  color: black;
+}
 /* for contact page */
 .flex-box {
   display: flex;
