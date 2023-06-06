@@ -25,11 +25,6 @@ html {
   background-color: var(--white);
 }
 
-header {
-  /* should stick to top */
-  /* or scrolling thing? */
-}
-
 body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
@@ -94,6 +89,7 @@ footer {
 .footer-git {
   font-size: 40px;
   color: var(--white);
+  justify-self: center;
 }
 
 .footer-git:hover {
@@ -102,6 +98,7 @@ footer {
 
 .sr-only {
   display: hidden;
+  color: var(--white);
 }
 
 /* for nav bar */
@@ -173,6 +170,51 @@ footer {
 
 .bio::first-line {
   font-weight: bold;
+}
+
+/* for previous work page */
+.prev-section {
+  margin: 20px 10px;
+}
+
+.work-type {
+  margin: 20px 0;
+}
+
+.type-sub {
+  margin: 10px;
+}
+
+.sub-desc {
+  margin: 10px 20px;
+}
+
+.class-list {
+  margin: 5px 20px;
+}
+
+.class {
+  margin: 5px 30px;
+}
+
+.class-name {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.proj-link {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--black);
+}
+
+.proj-link:hover {
+  color: var(--steel-blue);
+  border-bottom-color: var(--steel-blue);
+}
+
+.proj-link:focus {
+  color: var(--steel-blue);
 }
 
 /* for projects page */
