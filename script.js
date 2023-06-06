@@ -82,3 +82,22 @@ gitLink.append(gitSR);
 foot.append(ghost);
 foot.append(gitLink);
 foot.append(crDiv);
+
+// conditional positioning of footer
+const checkSticky = (event) => {
+  const scr = window.innerHeight;
+  const doc =
+    document.querySelector("main").scrollHeight + head.scrollHeight + 50;
+
+  if (foot.classList.contains("sticky")) {
+    if (doc + 121 >= scr) foot.classList.remove("sticky");
+  } else {
+    if (doc + 121 < scr) foot.classList.add("sticky");
+  }
+
+  console.log(`Doc: ${doc} Screen: ${scr}`);
+  return;
+};
+
+window.addEventListener("load", checkSticky);
+window.addEventListener("resize", checkSticky);
