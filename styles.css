@@ -115,7 +115,7 @@ footer {
 }
 
 .sr-only {
-  display: hidden;
+  display: none;
   color: var(--white);
   background-color: var(--black);
 }
