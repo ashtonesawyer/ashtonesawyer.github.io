@@ -10,6 +10,7 @@
   --gray: #565656;
   --light-light-gray: rgba(120, 118, 118, 0.2);
   --light-gray: rgba(120, 118, 118, 0.5);
+  --dark-white: #e3dac9;
 
   --teal: #006060;
   --violetred: #a2106d;
@@ -17,6 +18,7 @@
 
   --black-blue: #00002a;
   --dark-blue: #152238;
+  --dark-steel: #2774a0;
   --steel-blue: #2d82b7;
   --yellow: #eeeb2e;
 }
@@ -35,7 +37,7 @@ body {
 h1 {
   text-align: center;
   font-size: 2rem;
-  margin: 10px auto;
+  margin: 30px auto 10px auto;
 }
 
 form {
@@ -48,15 +50,29 @@ table {
   border: 2px solid var(--black);
 }
 
+.sticky {
+  position: fixed;
+  bottom: 0;
+}
+
 footer {
-  /* should stick to bottom */
   background-color: var(--black-blue);
   padding: 25px 0;
+  width: 100%;
   border-top: solid 1px var(--light-light-gray);
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--white);
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: 0;
+  text-align: center;
 }
 
 .primary {
@@ -70,12 +86,14 @@ footer {
 }
 
 .secondary {
-  background-color: var(--steel-blue);
+  background-color: var(--dark-steel);
+  border: 2px solid var(--dark-steel);
   color: var(--white);
 }
 
 .secondary:hover {
-  color: var(--white);
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .copyright {
@@ -99,6 +117,7 @@ footer {
 .sr-only {
   display: hidden;
   color: var(--white);
+  background-color: var(--black);
 }
 
 /* for nav bar */
@@ -133,7 +152,7 @@ footer {
   background-color: var(--steel-blue);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   .menu {
     padding: 0;
   }
@@ -165,7 +184,8 @@ footer {
 
 .bio {
   margin: 20px auto;
-  width: 300px;
+  width: 70%;
+  max-width: 900px;
 }
 
 .bio::first-line {
@@ -174,7 +194,8 @@ footer {
 
 /* for previous work page */
 .prev-section {
-  margin: 20px 10px;
+  margin: 20px auto;
+  width: 70%;
 }
 
 .work-type {
@@ -219,6 +240,7 @@ footer {
 
 /* for projects page */
 .page-top {
+  background-image: url(./images/dk-blue-wall-1.jpg);
   background-color: var(--steel-blue);
   height: 93vh;
   display: flex;
@@ -232,7 +254,7 @@ footer {
 }
 
 .carousel-out:hover {
-  color: var(--black-blue);
+  color: var(--dark-white);
 }
 
 .carousel {
@@ -244,7 +266,6 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   margin: auto;
 }
 
@@ -256,7 +277,7 @@ footer {
   background-color: var(--dark-blue);
   border-radius: 50%;
   text-align: center;
-  line-height: 36px;
+  /* line-height: 36px; */
   color: var(--white);
   font-size: 15px;
   transition: all 0.3s linear;
@@ -283,15 +304,16 @@ footer {
 }
 
 .card {
+  background-color: var(--white);
   display: flex;
   min-width: 500px;
   max-width: 500px;
-  border: 1px solid var(--black);
+  border: 2.5px solid var(--black);
   object-fit: cover;
 }
 
 .card-img {
-  width: 33%;
+  width: 34%;
   height: 300px;
   padding: 10px;
   align-self: center;
@@ -317,31 +339,98 @@ footer {
 
 .git-logo {
   font-size: 35px;
-  color: var(--steel-blue);
-}
-
-.git-logo:hover {
   color: var(--dark-blue);
 }
 
+.git-logo:hover {
+  color: var(--steel-blue);
+}
+
 .projects {
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+.proj-title {
+  margin: 10px 0;
+}
+
+.git-link {
+  display: block;
+  margin: 15px auto;
 }
 
 .project {
   margin: 30px 0;
 }
 
-.fitbot {
+.gui-fig {
+  padding: 5px;
+  border: 1px solid;
+  width: 95%;
+  margin: 10px auto;
+  background-color: var(--dark-steel);
+}
+
+.gui-cap {
+  text-align: center;
+  padding: 5px;
+  font-style: italic;
+  font-size: 0.8em;
+  color: var(--white);
+}
+
+.gui-default {
+  display: block;
+  width: 70%;
+  margin: 10px auto;
+  border: 1px solid;
+}
+
+.gui-imgs {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gui-img {
+  width: 40%;
+  min-width: 300px;
+  border: 1px solid;
+  margin: 0 5px;
 }
 
 .proj-info {
   margin: 10px;
 }
 
+.fitbot-widget {
+  margin: 15px 25%;
+  border: 2px solid var(--black);
+}
+
 .intent {
   font-weight: bold;
+  font-size: 0.9em;
+}
+
+.intent-desc {
+  margin: 10px 0 25px 0;
+}
+
+.fitbot-quest {
+  margin: 10px auto;
+  max-width: 1050px;
+  min-height: 225px;
+}
+
+.quest-op {
+  width: 10%;
+}
+
+.quest-row {
+  margin: 10px 0;
+  border-top: 1px solid var(--light-gray);
 }
 
 .question {
@@ -405,6 +494,13 @@ footer {
 label {
   color: black;
 }
+
+@media (max-width: 830px) {
+  .gui-img {
+    margin: 10px;
+  }
+}
+
 /* for contact page */
 .flex-box {
   display: flex;
@@ -457,6 +553,8 @@ label {
 }
 
 .contact-form {
+  display: block;
+  margin: auto;
   background-color: var(--white);
   border-radius: 10px;
   padding: 10px;
@@ -470,20 +568,6 @@ label {
 .contact-input {
   width: 100%;
   border: 2px solid;
-}
-
-.hidden {
-  display: none;
-  justify-content: space-between;
-}
-
-.btn {
-  display: inline-block;
-  border: 0;
-  width: 100%;
-  padding: 10px 0;
-  text-decoration: 0;
-  text-align: center;
 }
 
 @media (max-width: 775px) {
