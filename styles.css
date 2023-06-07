@@ -214,6 +214,10 @@ footer {
   margin: 5px 20px;
 }
 
+.list-desc {
+  margin-left: 10px;
+}
+
 .class {
   margin: 5px 30px;
 }
